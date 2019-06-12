@@ -1,0 +1,297 @@
+body {
+  background-color: #f3f3f4;
+}
+
+.wh {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  /* -ms-touch-action: manipulation; */
+  touch-action: manipulation;
+  cursor: pointer;
+  /* -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; */
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.wh,
+.wh:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.green {
+  background-color: #23c6c8;
+}
+
+.red {
+  background-color: #ed5565;
+}
+
+.blue {
+  background-color: #1c84c6;
+}
+
+.green:hover {
+  background-color: #21b9bb;
+}
+
+.red:hover {
+  background-color: #ec4758;
+}
+
+.blue:hover {
+  background-color: #1a7bb9;
+}
+.Masked {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.Masked .wop {
+  position: absolute;
+  width: 600px;
+  height: 130px;
+  background: #fff;
+  padding-top: 20px;
+  color: red;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 4px;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+  top: 125px;
+  left: 50%;
+  margin-left: -350px;
+  z-index: 2px;
+}
+
+.Masked .wop span {
+  color: #202124;
+  display: block;
+  text-align: left;
+  font-weight: 400;
+  margin-left: 30px;
+}
+.qqs {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.qqs a {
+  padding: 6px 40px;
+  margin-right: 30px;
+}
+
+.qqs a:first-child {
+  margin-right: 10px;
+}
+.waiceng {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1000px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.waiceng .modal-body {
+  padding-top: 40px;
+}
+.waiceng .modal-body input[type="radio"] {
+  margin-right: 8px;
+  top: 2px;
+  position: relative;
+}
+.waiceng .modal-body label:last-child input[type="radio"] {
+  margin-left: 8px;
+}
+.input-append .btn {
+  position: absolute;
+  background-color: #07aaf4;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  color: #fff;
+}
+.input-append .input-large {
+  width: 100%;
+  height: 34px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding-left: 90px;
+}
+.input-append .input-large:focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+/* #lefile {
+  width: 100%;
+  height: 34px;
+  line-height: 34px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+input[type="file"] {
+  vertical-align: middle;
+}
+#lefile:focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+} */
+.waiceng .modal-body .col-sm-offset-3 .wh {
+  padding: 6px 40px;
+}
+.waiceng .modal-body .col-sm-offset-3 .blue {
+  margin: 0 15px;
+}
+textarea {
+  resize: none;
+}
+.modal-content {
+  top: -30px;
+}
+a:visited,
+a:link,
+a:active,
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.submits {
+  width: 100%;
+}
+
+.table > tbody > tr.submits > td {
+  border: 0 none;
+}
+
+.submits td > input {
+  width: 100px;
+  height: 39px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 34px;
+  background-color: #5bc0de;
+  border: 0 none;
+  border-radius: 4px;
+}
+
+.submits td > input:hover {
+  opacity: 0.6;
+}
+
+.submits td > nav {
+  height: 34px;
+}
+
+.submits td > nav .pagination {
+  margin: 3px 0 0 0;
+}
+.fabric {
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+}
+.addition {
+  margin-bottom: 20px;
+}
+a.additions,
+a.allDelete {
+  display: block;
+  float: left;
+  width: 40px;
+  height: 34px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 34px;
+}
+.additions {
+  font-size: 20px;
+}
+a.additions i,
+a.allDelete i {
+  color: #676a6c;
+  width: 16px;
+  height: 19px;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+.tableh > thead > tr > th,
+.tableh > tbody > tr > td {
+  text-align: center;
+  padding: 0;
+  line-height: 40px;
+}
+.tableh > tbody > tr > td {
+  line-height: 45px;
+}
+.pagination {
+  margin: 5px 0;
+}
+a.additions i.glyphicon {
+  top: -1px;
+}
+a.allDelete i.glyphicon {
+  top: 3px;
+}
+.pagelist {
+  padding-left: 36%;
+  position: relative;
+  height: 40px;
+}
+.pagelist ul.page {
+  margin: 0;
+  position: absolute;
+  bottom: 10px;
+}
+.pagelist ul li {
+  list-style-type: none;
+  float: left;
+}
+.pagelist .page span,
+.pagelist .page a {
+  display: inline;
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+}
+.pagelist .page span {
+  color: #fff;
+  background: #5bc0de;
+}
+.pagelist .page a {
+  color: #000;
+  background: #fefefe;
+}
+.pagelist .page a:hover {
+  color: #fff;
+  background: #5bc0de;
+}
+.m-b {
+  height: 40px;
+  background-color: transparent;
+  text-align-last: center;
+  border: 1px solid transparent;
+}

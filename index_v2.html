@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>添加站點</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.min862f.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .tabs-container .tabs-left .panel-body {
+            margin-left: 10%;
+        }
+
+        .ibox-content {
+            border-color: transparent;
+        }
+
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content">
+        <div class="row">
+
+            <div class="col-sm-12">
+                <div class="tabs-container">
+
+                    <div class="tabs-left">
+                        <div class="tab-content ">
+                            <div id="tab-8" class="tab-pane active">
+                                <div class="panel-body">
+                                    <div class="ibox float-e-margins">
+                                        <div class="ibox-content">
+                                            <form class="form-horizontal m-t" id="signupForm" novalidate="novalidate">
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">站点名称：</label>
+                                                    <div class="col-sm-8">
+                                                        <input id="" name="firstname" class="form-control" type="text"
+                                                            placeholder="请输入名称...">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">网站前缀：</label>
+
+                                                    <div class="col-sm-8">
+                                                        <div class="checkbox-wrap"
+                                                            style="line-height: 30px; margin-left: 0;">
+                                                            <input type="checkbox" value="circlecheckbox1" id="agree"
+                                                                checked>
+                                                            <label class="circle" for="agree">HTTP</label>
+                                                            <input type="checkbox" value="circlecheckbox1" id="agree1">
+                                                            <label class="circle" for="agree1">HTTPS</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">站点域名：</label>
+                                                    <div class="col-sm-8">
+                                                        <input id="" name="lastname" class="form-control" type="text"
+                                                            aria-required="true" aria-invalid="false"
+                                                            placeholder="请输入域名...">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">站点标题：</label>
+                                                    <div class="col-sm-8">
+                                                        <input id="" name="username" class="form-control" type="text"
+                                                            aria-required="true" aria-invalid="true"
+                                                            placeholder="请输入标题...">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">网站描述：</label>
+                                                    <div class="col-sm-8">
+                                                        <textarea name="" id="" class="form-control" cols="30" rows="2"
+                                                            placeholder="请输入..."></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">网站logo：</label>
+                                                    <div class="col-sm-8">
+
+                                                        <input id="lefile" type="file" class="form-control"
+                                                            style="display: none;" />
+                                                        <div class="input-append input-group">
+                                                            <span class=" input-group-btn">
+                                                                <button class="btn btn-white" type="button"
+                                                                    onclick="$('input[id=lefile]').click();">选择文件</button>
+                                                            </span>
+                                                            <input class="input-large form-control" type="text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">列表文章数：</label>
+                                                    <div class="col-sm-8">
+                                                        <input id="" name="username" class="form-control" type="text"
+                                                            aria-required="true" aria-invalid="true"
+                                                            placeholder="请输入数量...">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">分页显示数：</label>
+                                                    <div class="col-sm-8">
+                                                        <input id="" name="username" class="form-control" type="text"
+                                                            aria-required="true" aria-invalid="true"
+                                                            placeholder="请输入数量...">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">分页名：</label>
+                                                    <div class="col-sm-8">
+                                                        <input id="" name="email" class="form-control" type="text"
+                                                            placeholder="请输入名称...">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">站长认证：</label>
+                                                    <div class="col-sm-8">
+                                                        <textarea name="" id="" class="form-control" cols="30" rows="2"
+                                                            placeholder="请输入..."></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">统计代码：</label>
+                                                    <div class="col-sm-8">
+                                                        <textarea name="" id="" class="form-control" cols="30" rows="2"
+                                                            placeholder="请输入..."></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">网站备案号：</label>
+                                                    <div class="col-sm-8">
+                                                        <input id="" name="email" class="form-control" type="text"
+                                                            placeholder="请输入备案号...">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">网站地图分页数：</label>
+                                                    <div class="col-sm-8">
+                                                        <input id="" name="email" class="form-control" type="text"
+                                                            placeholder="请输入页数...">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group clearfix" style="margin-top: 40px;">
+                                                    <div class="col-sm-8 col-sm-offset-3">
+                                                        <button type="button"
+                                                            class="chongzhi btn btn-w-m btn-info">重置</button>
+                                                        <button type="button"
+                                                            class="btn btn-w-m btn-primary">提交</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-9" class="tab-pane">
+                                <div class="panel-body" style="padding: 40px 20px;">
+                                    <div class="checkbox-wrap ">
+                                        <div class="stencil">
+                                            <input type="checkbox" name="" id="moban">
+                                            <label class="circle" for="moban"><img src="img/a1.jpg" alt=""
+                                                    class="img-rounded"><span>美女</span></label>
+                                        </div>
+                                        <div class="stencil">
+                                            <input type="checkbox" name="" id="moban1">
+                                            <label class="circle" for="moban1"><img src="img/a1.jpg" alt=""
+                                                    class="img-rounded"><span>美女</span></label>
+                                        </div>
+                                        <div class="stencil">
+                                            <input type="checkbox" name="" id="moban2">
+                                            <label class="circle" for="moban2"><img src="img/a1.jpg" alt=""
+                                                    class="img-rounded"><span>美女</span></label>
+                                        </div>
+                                        <div class="stencil">
+                                            <input type="checkbox" name="" id="moban3">
+                                            <label class="circle" for="moban3"><img src="img/a1.jpg" alt=""
+                                                    class="img-rounded"><span>美女</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-10" class="tab-pane ">
+                                <div class="panel-body" style="padding: 40px 20px;">
+                                    <div class="containers clearfix">
+                                        <label class="control-label pull-left">站点类型：</label>
+                                        <select class="form-control m-b" name="account">
+                                            <option>选项 1</option>
+                                            <option>选项 2</option>
+                                            <option>选项 3</option>
+                                            <option>选项 4</option>
+                                        </select>
+
+                                    </div>
+                                    <div class="containers">
+                                        <label class="control-label pull-left">选择栏目：</label>
+                                        <div class="checkbox-wrap">
+                                            <input type="checkbox" value="circlecheckbox1" id="circle1">
+                                            <label class="circle" for="circle1">渔获战报<span>(1)</span></label>
+                                            <input type="checkbox" value="circlecheckbox2" id="circle2">
+                                            <label class="circle" for="circle2">钓鱼技巧<span>(1)</span></label>
+                                            <input type="checkbox" value="circlecheckbox3" id="circle3">
+                                            <label class="circle" for="circle3">钓鱼视频<span>(0)</span></label>
+                                            <input type="checkbox" value="circlecheckbox4" id="circle4">
+                                            <label class="circle" for="circle4">钓鱼饵料<span>(1)</span></label>
+                                            <input type="checkbox" value="circlecheckbox4" id="circle5">
+                                            <label class="circle" for="circle5">路亚之家<span>(0)</span></label>
+                                            <input type="checkbox" value="circlecheckbox4" id="circle6">
+                                            <label class="circle" for="circle6">海钓之家<span>(0)</span></label>
+                                            <input type="checkbox" value="circlecheckbox4" id="circle7">
+                                            <label class="circle" for="circle7">渔具大全<span>(1)</span></label>
+                                            <input type="checkbox" value="circlecheckbox4" id="circle8">
+                                            <label class="circle" for="circle8">渔乐资讯<span>(0)</span></label>
+                                            <input type="checkbox" value="circlecheckbox4" id="circle9">
+                                            <label class="circle" for="circle9">钓鱼饵料<span>(1)</span></label>
+                                            <input type="checkbox" value="circlecheckbox4" id="circle10">
+                                            <label class="circle" for="circle10">钓鱼入门<span>(0)</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group clearfix" style=" margin-top: 40px;">
+                                        <button type="button" class="chongzhi btn btn-w-m btn-info">重置</button>
+                                        <button type="button" class="btn btn-w-m btn-primary">提交</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

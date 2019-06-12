@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>站点栏目</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/public.css">
+    <style>
+        .thName {
+            width: 100%;
+            border: 0;
+            text-align: center;
+            text-align-last: center
+        }
+
+        thead th,
+        tbody td {
+            text-align: center
+        }
+
+        .table>tbody>tr>td {
+            line-height: 35px
+        }
+
+        .table>tbody {
+            table-layout: fixed;
+            width: 100%
+        }
+
+        .table>tbody>tr>td:nth-child(5),
+        .table>tbody>tr>td:nth-child(6),
+        .table>tbody>tr>td:nth-child(7),
+        .table>tbody>tr>td:nth-child(8) {
+            padding: 0
+        }
+
+        .table>tbody>tr>td input[type="text"] {
+            width: 100%;
+            height: 34px;
+            text-align: center;
+            border: 0 none;
+            overflow: hidden;
+            background: transparent
+        }
+
+        .table>tbody>tr>td:nth-child(5) input,
+        .table>tbody>tr>td:nth-child(6) input,
+        .table>tbody>tr>td:nth-child(7) input,
+        .table>tbody>tr>td:nth-child(8) input {
+            height: 47px;
+            word-break: keep-all;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis
+        }
+
+        .table>tbody>tr>td .thName {
+            height: 34px;
+            background: transparent
+        }
+
+        .thName:focus {
+            outline: 0
+        }
+
+
+
+        .treegrid-expander {
+            margin-left: -5px;
+            margin-right: 5px
+        }
+
+        .selectName {
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <table class="table tree-2 table-bordered table-striped table-condensed" id="table">
+            <thead>
+                <tr>
+                    <th class="bs-checkbox " style="width: 36px; " data-field="check">
+                        <div class="th-inner ">
+                            <input type="checkbox" id="j_cbAll" />
+                        </div>
+                        <div class="fht-cell"></div>
+                    </th>
+                    <th style="" data-field="id">
+                        <div class="th-inner ">栏目ID</div>
+                        <div class="fht-cell"></div>
+                    </th>
+                    <th style="" data-field="name">
+                        <select class="thName selectName" name="web_id"
+                            onchange="onChangeCat('admin.php?p=admin&c=webcat&a=show&web_id=',this.value)">
+                            <option value="8" selected="selected">钓鱼吧</option>
+                            <option value="9">地方新闻</option>
+                        </select>
+                        <div class="fht-cell"></div>
+                    </th>
+                    <th style="" data-field="columnTitle">
+                        <div class="th-inner ">栏目名称</div>
+                        <div class="fht-cell"></div>
+                    </th>
+                    <th style="" data-field="columnKeyword">
+                        <div class="th-inner ">标题</div>
+                        <div class="fht-cell"></div>
+                    </th>
+                    <th style="" data-field="columnDescription">
+                        <div class="th-inner ">关键词</div>
+                        <div class="fht-cell"></div>
+                    </th>
+                    <th style="" data-field="columnUrl">
+                        <div class="th-inner ">描述</div>
+                        <div class="fht-cell"></div>
+                    </th>
+                    <th style="" data-field="pid">
+                        <div class="th-inner ">URL</div>
+                        <div class="fht-cell"></div>
+                    </th>
+                    <th style="" data-field="columnTypes">
+                        <div class="th-inner ">栏目类型</div>
+                        <div class="fht-cell"></div>
+                    </th>
+                    <th style="" data-field="templateindex">
+                        <div class="th-inner ">封面模板</div>
+                        <div class="fht-cell"></div>
+                    </th>
+                    <th style="" data-field="templatelist">
+                        <div class="th-inner ">列表模板</div>
+                        <div class="fht-cell"></div>
+                    </th>
+                    <th style="" data-field="contentTemplate">
+                        <div class="th-inner ">内容模板</div>
+                        <div class="fht-cell"></div>
+                    </th>
+                    <th style="text-align: center; " data-field="operate">
+                        <div class="th-inner ">操作</div>
+                        <div class="fht-cell"></div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="j_tb">
+                <form action="" class="clearfix">
+                    <tr class="treegrid-1">
+                        <td>
+                            <input type="checkbox" />
+                        </td>
+
+                        <td>1</td>
+                        <td>钓鱼吧1</td>
+                        <td class="">钓鱼技巧titletile</td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧ti钓鱼技巧titletile2钓鱼技巧titletile2钓鱼技巧titletile2tletile2">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile3">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">封面</option>
+                                <option value="">列表</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <a href="#" class="wh blue redact" data-id="0">编辑</a>
+                            <a href="#" class="wh red shows">删除</a>
+                            <a href="#" class="wh green">生成页面</a>
+                        </td>
+                    </tr>
+                    <tr class="treegrid-parent-1">
+                        <td>
+                            <input type="checkbox" />
+                        </td>
+                        <td>2</td>
+                        <td>钓鱼吧2</td>
+                        <td class="">钓鱼技巧titletile</td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧ti钓鱼技巧titletile2钓鱼技巧titletile2钓鱼技巧titletile2tletile2">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile3">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">封面</option>
+                                <option value="">列表</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <a href="#" class="wh blue redact" data-id="1">编辑</a>
+                            <a href="#" class="wh red shows">删除</a>
+                            <a href="#" class="wh green">生成页面</a>
+                        </td>
+                    </tr>
+                    <tr class="treegrid-parent-1">
+                        <td>
+                            <input type="checkbox" />
+                        </td>
+                        <td>2</td>
+                        <td>钓鱼吧3</td>
+                        <td class="">钓鱼技巧titletile</td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧ti钓鱼技巧titletile2钓鱼技巧titletile2钓鱼技巧titletile2tletile2">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile3">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">封面</option>
+                                <option value="">列表</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <a href="#" class="wh blue redact" data-id="2">编辑</a>
+                            <a href="#" class="wh red shows">删除</a>
+                            <a href="#" class="wh green">生成页面</a>
+                        </td>
+                    </tr>
+
+                    <tr class="treegrid-2">
+                        <td>
+                            <input type="checkbox" />
+                        </td>
+                        <td>4</td>
+                        <td>钓鱼吧6</td>
+                        <td class="">钓鱼技巧titletile</td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧ti钓鱼技巧titletile2钓鱼技巧titletile2钓鱼技巧titletile2tletile2">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile3">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">封面</option>
+                                <option value="">列表</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <a href="#" class="wh blue redact" data-id="3">编辑</a>
+                            <a href="#" class="wh red shows">删除</a>
+                            <a href="#" class="wh green">生成页面</a>
+                        </td>
+                    </tr>
+                    <tr class="treegrid-parent-2">
+                        <td>
+                            <input type="checkbox" />
+                        </td>
+                        <td>3</td>
+                        <td>钓鱼吧5</td>
+                        <td class="">钓鱼技巧titletile</td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧ti钓鱼技巧titletile2钓鱼技巧titletile2钓鱼技巧titletile2tletile2">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile3">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">封面</option>
+                                <option value="">列表</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <a href="#" class="wh blue redact" data-id="4">编辑</a>
+                            <a href="#" class="wh red shows">删除</a>
+                            <a href="#" class="wh green">生成页面</a>
+                        </td>
+                    </tr>
+                    <tr class="treegrid-parent-2">
+                        <td>
+                            <input type="checkbox" />
+                        </td>
+                        <td>3</td>
+                        <td>钓鱼吧5</td>
+                        <td class="">钓鱼技巧titletile</td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧ti钓鱼技巧titletile2钓鱼技巧titletile2钓鱼技巧titletile2tletile2">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile3">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">封面</option>
+                                <option value="">列表</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <a href="#" class="wh blue redact" data-id="5">编辑</a>
+                            <a href="#" class="wh red shows">删除</a>
+                            <a href="#" class="wh green">生成页面</a>
+                        </td>
+                    </tr>
+                    <tr class="treegrid-3">
+                        <td>
+                            <input type="checkbox" />
+                        </td>
+                        <td>5</td>
+                        <td>钓鱼吧7</td>
+                        <td class="">钓鱼技巧titletile</td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧ti钓鱼技巧titletile2钓鱼技巧titletile2钓鱼技巧titletile2tletile2">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile3">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">封面</option>
+                                <option value="">列表</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <a href="#" class="wh blue redact" data-id="6">编辑</a>
+                            <a href="#" class="wh red shows">删除</a>
+                            <a href="#" class="wh green">生成页面</a>
+                        </td>
+                    </tr>
+                    <tr class="treegrid-parent-3">
+                        <td>
+                            <input type="checkbox" />
+                        </td>
+                        <td>6</td>
+                        <td>钓鱼吧8</td>
+                        <td class="">钓鱼技巧titletile</td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧ti钓鱼技巧titletile2钓鱼技巧titletile2钓鱼技巧titletile2tletile2">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile3">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">封面</option>
+                                <option value="">列表</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <a href="#" class="wh blue redact" data-id="7">编辑</a>
+                            <a href="#" class="wh red shows">删除</a>
+                            <a href="#" class="wh green">生成页面</a>
+                        </td>
+                    </tr>
+                    <tr class="treegrid-parent-3">
+                        <td>
+                            <input type="checkbox" />
+                        </td>
+                        <td>6</td>
+                        <td>钓鱼吧8</td>
+                        <td class="">钓鱼技巧titletile</td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧ti钓鱼技巧titletile2钓鱼技巧titletile2钓鱼技巧titletile2tletile2">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile3">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">封面</option>
+                                <option value="">列表</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <a href="#" class="wh blue redact" data-id="8">编辑</a>
+                            <a href="#" class="wh red shows">删除</a>
+                            <a href="#" class="wh green">生成页面</a>
+                        </td>
+                    </tr>
+                    <tr class="treegrid-4">
+                        <td>
+                            <input type="checkbox" />
+                        </td>
+                        <td>5</td>
+                        <td>钓鱼吧7</td>
+                        <td class="">钓鱼技巧titletile</td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧ti钓鱼技巧titletile2钓鱼技巧titletile2钓鱼技巧titletile2tletile2">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile3">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">封面</option>
+                                <option value="">列表</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <a href="#" class="wh blue redact" data-id="9">编辑</a>
+                            <a href="#" class="wh red shows">删除</a>
+                            <a href="#" class="wh green">生成页面</a>
+                        </td>
+                    </tr>
+                    <tr class="treegrid-parent-4">
+                        <td>
+                            <input type="checkbox" />
+                        </td>
+                        <td>6</td>
+                        <td>钓鱼吧8</td>
+                        <td class="">钓鱼技巧titletile</td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧ti钓鱼技巧titletile2钓鱼技巧titletile2钓鱼技巧titletile2tletile2">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile3">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">封面</option>
+                                <option value="">列表</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <a href="#" class="wh blue redact" data-id="10">编辑</a>
+                            <a href="#" class="wh red shows">删除</a>
+                            <a href="#" class="wh green">生成页面</a>
+                        </td>
+                    </tr>
+                    <tr class="treegrid-parent-4">
+                        <td>
+                            <input type="checkbox" />
+                        </td>
+                        <td>6</td>
+                        <td>钓鱼吧8</td>
+                        <td class="">钓鱼技巧titletile</td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧ti钓鱼技巧titletile2钓鱼技巧titletile2钓鱼技巧titletile2tletile2">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile3">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">封面</option>
+                                <option value="">列表</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <a href="#" class="wh blue redact" data-id="11">编辑</a>
+                            <a href="#" class="wh red shows">删除</a>
+                            <a href="#" class="wh green">生成页面</a>
+                        </td>
+                    </tr>
+                    <tr class="treegrid-5">
+                        <td>
+                            <input type="checkbox" />
+                        </td>
+                        <td>5</td>
+                        <td>钓鱼吧7</td>
+                        <td class="">钓鱼技巧titletile</td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧ti钓鱼技巧titletile2钓鱼技巧titletile2钓鱼技巧titletile2tletile2">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile3">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">封面</option>
+                                <option value="">列表</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <a href="#" class="wh blue redact" data-id="12">编辑</a>
+                            <a href="#" class="wh red shows">删除</a>
+                            <a href="#" class="wh green">生成页面</a>
+                        </td>
+                    </tr>
+                    <tr class="treegrid-parent-5">
+                        <td>
+                            <input type="checkbox" />
+                        </td>
+                        <td>6</td>
+                        <td>钓鱼吧8</td>
+                        <td class="">钓鱼技巧titletile</td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧ti钓鱼技巧titletile2钓鱼技巧titletile2钓鱼技巧titletile2tletile2">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile3">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">封面</option>
+                                <option value="">列表</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <a href="#" class="wh blue redact" data-id="13">编辑</a>
+                            <a href="#" class="wh red shows">删除</a>
+                            <a href="#" class="wh green">生成页面</a>
+                        </td>
+                    </tr>
+                    <tr class="treegrid-parent-5">
+                        <td>
+                            <input type="checkbox" />
+                        </td>
+                        <td>6</td>
+                        <td>钓鱼吧8</td>
+                        <td class="">钓鱼技巧titletile</td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧ti钓鱼技巧titletile2钓鱼技巧titletile2钓鱼技巧titletile2tletile2">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile3">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">封面</option>
+                                <option value="">列表</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <a href="#" class="wh blue redact" data-id="14">编辑</a>
+                            <a href="#" class="wh red shows">删除</a>
+                            <a href="#" class="wh green">生成页面</a>
+                        </td>
+                    </tr>
+                    <tr class="treegrid-6">
+                        <td>
+                            <input type="checkbox" />
+                        </td>
+                        <td>5</td>
+                        <td>钓鱼吧7</td>
+                        <td class="">钓鱼技巧titletile</td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧ti钓鱼技巧titletile2钓鱼技巧titletile2钓鱼技巧titletile2tletile2">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile3">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">封面</option>
+                                <option value="">列表</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <a href="#" class="wh blue redact" data-id="15">编辑</a>
+                            <a href="#" class="wh red shows">删除</a>
+                            <a href="#" class="wh green">生成页面</a>
+                        </td>
+                    </tr>
+                    <tr class="treegrid-parent-6">
+                        <td>
+                            <input type="checkbox" />
+                        </td>
+                        <td>6</td>
+                        <td>钓鱼吧8</td>
+                        <td class="">钓鱼技巧titletile</td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧ti钓鱼技巧titletile2钓鱼技巧titletile2钓鱼技巧titletile2tletile2">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile3">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">封面</option>
+                                <option value="">列表</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <a href="#" class="wh blue redact" data-id="16">编辑</a>
+                            <a href="#" class="wh red shows">删除</a>
+                            <a href="#" class="wh green">生成页面</a>
+                        </td>
+                    </tr>
+                    <tr class="treegrid-parent-6">
+                        <td>
+                            <input type="checkbox" />
+                        </td>
+                        <td>6</td>
+                        <td>钓鱼吧8</td>
+                        <td class="">钓鱼技巧titletile</td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧ti钓鱼技巧titletile2钓鱼技巧titletile2钓鱼技巧titletile2tletile2">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile3">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">封面</option>
+                                <option value="">列表</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <a href="#" class="wh blue redact" data-id="17">编辑</a>
+                            <a href="#" class="wh red shows">删除</a>
+                            <a href="#" class="wh green">生成页面</a>
+                        </td>
+                    </tr>
+                    <tr class="treegrid-7 treegrid-parent-6">
+                        <td>
+                            <input type="checkbox" />
+                        </td>
+                        <td>6</td>
+                        <td>钓鱼吧8</td>
+                        <td class="">钓鱼技巧titletile</td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧ti钓鱼技巧titletile2钓鱼技巧titletile2钓鱼技巧titletile2tletile2">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile3">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">封面</option>
+                                <option value="">列表</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td>
+                            <a href="#" class="wh blue redact" data-id="18">编辑</a>
+                            <a href="#" class="wh red shows">删除</a>
+                            <a href="#" class="wh blue quxiao">生成页面</a>
+                        </td>
+
+                    </tr>
+                    <tr class="treegrid-parent-7">
+                        <td>
+                            <input type="checkbox" />
+                        </td>
+                        <td>6</td>
+                        <td>钓鱼吧8</td>
+                        <td class="">钓鱼技巧titletile</td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧ti钓鱼技巧titletile2钓鱼技巧titletile2钓鱼技巧titletile2tletile2">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile3">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <input type="text" name="" value="钓鱼技巧titletile4">
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">封面</option>
+                                <option value="">列表</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <select class="thName" name="">
+                                <option value="" selected="selected">暂无</option>
+                                <option value="">暂无</option>
+                            </select>
+                        </td>
+                        <td class="">
+                            <a href="#" class="wh blue redact" data-id="17">编辑</a>
+                            <a href="#" class="wh red shows">删除</a>
+                            <a href="#" class="wh green">生成页面</a>
+                        </td>
+                    </tr>
+                    <tr class="submits">
+                        <td colspan="2"><input type="submit"></td>
+                        <td colspan="11">
+                            <div class="pagelist">
+                                <ul class="page clearfix" style="bottom: 1px;">
+                                    <li><span>1</span></li>
+                                    <li>
+                                        <a href="admin.php?p=admin&amp;c=type&amp;a=show&amp;page=2">2</a>
+                                    </li>
+                                    <li>
+                                        <a href="admin.php?p=admin&amp;c=type&amp;a=show&amp;page=3">3</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="admin.php?p=admin&amp;c=type&amp;a=show&amp;page=4">4</a>
+                                    </li>
+                                    <li>
+                                        <a href="admin.php?p=admin&amp;c=type&amp;a=show&amp;page=2">下一页</a>
+                                    </li>
+                                    <li>
+                                        <a href="admin.php?p=admin&amp;c=type&amp;a=show&amp;page=4">尾页</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </form>
+            </tbody>
+
+        </table>
+        <div class="Masked">
+            <div class="wop">
+                <span>系统显示</span>
+                您确定要删除ID:2的这条数据?
+                <div class="qqs">
+                    <a href="#" class="wh red">确定</a>
+                    <a href="#" class="wh green" onclick="off('Masked')">取消</a>
+                </div>
+            </div>
+        </div>
+        <div class="waiceng">
+            <div class="modal-dialog">
+                <div class="modal-content animated bounceInRight">
+                    <div class="modal-body">
+                        <form action="" class="form-horizontal">
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /container -->
+    <script src="lib/jquery/jquery-1.12.4.min.js"></script>
+    <script src="lib/jquery-treegrid/jquery.treegrid.js"></script>
+    <script src="js/index.js"></script>
+    <script src="lib/template/template-web.js"></script>
+    <script src="js/index_v3.js"></script>
+    <script id="tpl-user" type="text/html">
+             {{if dataList}}
+               <div class="form-group">
+                    <label class="col-sm-3 control-label">站点名称：</label>
+                    <div class="col-sm-8">
+                        <input id="" name="firstname" class="form-control" type="text"
+                            placeholder="请输入名称..." value="{{dataList.id}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">网站前缀：</label>
+    
+                    <div class="col-sm-8">
+                        <div class="checkbox-wrap" style="line-height: 30px; margin-left: 0;">
+    
+                            <label><input name="Fruit" type="radio"
+                                    value="{{dataList.http}}" />HTTP
+                            </label>
+                            <label><input name="Fruit" type="radio" value="{{dataList.http}}"
+                                    checked />HTTPS
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">站点域名：</label>
+                    <div class="col-sm-8">
+                        <input id="" name="lastname" class="form-control" type="text" aria-required="true"
+                            aria-invalid="false" placeholder="请输入域名..."
+                            value="{{dataList.domain}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">站点标题：</label>
+                    <div class="col-sm-8">
+                        <input id="" name="username" class="form-control" type="text" aria-required="true"
+                            aria-invalid="true" placeholder="请输入标题..."
+                            value="{{dataList.list_num}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">网站描述：</label>
+                    <div class="col-sm-8">
+                        <textarea name="" id="" class="form-control" cols="30" rows="2"
+                            placeholder="请输入...">{{dataList.logo}}</textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">网站logo：</label>
+                    <div class="col-sm-8">
+                        <!-- <input type="file" name="{{dataList.logo}}" id="lefile" value="{{dataList.logo}}"> -->
+                        <input id="lefile" type="file" style="display:none" value="{{dataList.page_name}}">
+                        <div class="input-append">
+                            <a class="btn" onclick="$('input[id=lefile]').click();">文件上传</a>
+                            <input id="photoCover" class="input-large" type="text" >
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">列表文章数：</label>
+                    <div class="col-sm-8">
+                        <input id="" name="username" class="form-control" type="text" aria-required="true"
+                            aria-invalid="true" placeholder="请输入数量..."
+                            value="{{dataList.page_num}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">分页显示数：</label>
+                    <div class="col-sm-8">
+                        <input id="" name="username" class="form-control" type="text" aria-required="true"
+                            aria-invalid="true" placeholder="请输入数量..."
+                            value="{{dataList.web_description}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">分页名：</label>
+                    <div class="col-sm-8">
+                        <input id="" name="email" class="form-control" type="text" placeholder="请输入名称..."
+                            value="{{dataList.web_keyword}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">站长认证：</label>
+                    <div class="col-sm-8">
+                        <textarea name="" id="" class="form-control" cols="30" rows="4"
+                            placeholder="请输入...">{{dataList.web_name}}</textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">统计代码：</label>
+                    <div class="col-sm-8">
+                        <textarea name="" id="" class="form-control" cols="30" rows="2"
+                            placeholder="请输入...">{{dataList.web_title}}</textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">网站备案号：</label>
+                    <div class="col-sm-8">
+                        <input id="" name="email" class="form-control" type="text" placeholder="请输入备案号..."
+                            value="{{dataList.web_tongji}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">网站地图分页数：</label>
+                    <div class="col-sm-8">
+                        <input id="" name="email" class="form-control" type="text" placeholder="请输入页数..."
+                            value="{{dataList.web_verify}}">
+                    </div>
+                </div>
+                <div class="form-group clearfix" style="margin-top: 40px;">
+                    <div class="col-sm-8 col-sm-offset-3">
+                        <input type="submit" value="提交" class="wh green">
+                        <a href="JavaScript:;" class="wh red" onclick='off("waiceng")'>取消</a>
+                    </div>
+                </div>
+            {{/if}} 
+        </script>
+    <script type="text/javascript">
+        $(".tree-2").treegrid({
+            treeColumn: 3,
+            initialState: "collapsed",
+            expanderExpandedClass: "glyphicon glyphicon-minus",
+            expanderCollapsedClass: "glyphicon glyphicon-plus"
+        });
+        $(".redact").click(function () {
+            var dataId = $(this).attr("data-id");
+            $.ajax({
+                url: "json/zhandianliebiao.php",
+                type: 'POST',
+                data: "id = " + dataId,
+                dataType: "json",
+                success: function (obj) {
+
+                    $(".waiceng").show();
+                    $("input[id=lefile]").change(function () {
+                        console.log($(this).val());
+                        console.log($("#photoCover").val($(this).val()));
+
+                        $("#photoCover").val($(this).val());
+                    });
+                    $(".form-horizontal").html(
+                        template("tpl-user", { dataList: obj[parseInt(dataId)] })
+                    );
+                },
+                error: function () {
+                    console.log("出錯了");
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

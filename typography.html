@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>H+ 后台主题UI框架 - 基本表单</title>
+    <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
+    <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+
+    <!-- <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.min862f.css?v=4.1.0" rel="stylesheet"> -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <style>
+        .ibox-content {
+            border-top: 0;
+        }
+
+        .tabs-container .panel-body {
+            position: relative;
+            height: 500px;
+
+            padding: 0;
+        }
+
+        .ibox {
+            position: absolute;
+            width: 78%;
+            top: 1px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+
+
+        .containers {
+            display: block;
+            height: 50px;
+        }
+
+        .containers .control-label {
+            line-height: 34px;
+            margin-right: 15px;
+        }
+
+        .containers .form-control {
+            width: 200px;
+            float: left;
+        }
+
+        /* ************ */
+        .checkbox-wrap {
+            width: 90%;
+            padding-top: 40px;
+            position: relative;
+            margin: 0 auto;
+            top: 12%;
+            height: 40%;
+            background-color: white;
+        }
+
+        input[type="checkbox"] {
+
+            position: absolute;
+            clip: rect(0, 0, 0, 0)
+        }
+
+
+        /*圆形checkbox*/
+        .circle {
+            margin-right: 10px;
+        }
+
+        .circle span {
+            font-family: 宋体;
+            margin-left: 3px;
+            color: red;
+        }
+
+        .circle::before {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: #EEE;
+            vertical-align: middle;
+            margin-right: 5px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            transition: background ease-in .5s;
+        }
+
+        input[type="checkbox"]:checked+.circle::before {
+            background-color: rgb(53, 183, 111);
+            border: 5px #EEE solid;
+
+        }
+
+        .stencil {
+            float: left;
+            margin-right: 40px;
+        }
+
+        .stencil label {
+            position: relative;
+            display: inline-block;
+            width: 200px;
+        }
+
+        .checkbox-wrap label img {
+            width: 200px;
+        }
+
+        .stencil label span {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: -25px;
+            text-align: center;
+        }
+
+        .stencil input {
+            margin-right: 10px;
+        }
+
+        .stencil .circle::before {
+            position: absolute;
+            left: -30px;
+            top: 50%;
+            margin-top: -10px;
+        }
+
+        .btnbianji {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .wrapper {
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content">
+        <div class="row">
+
+            <div class="col-sm-12">
+                <div class="checkbox-wrap ">
+                    <div class="stencil">
+                        <input type="checkbox" name="" id="moban">
+                        <label class="circle" for="moban"><img src="img/a1.jpg" alt=""
+                                class="img-rounded"><span>美女</span></label>
+                        <div class="btnbianji">
+                            <button type="button" class="btn btn-success" data-toggle="modal"
+                                data-target="#myModal">编辑</button>
+                            <button type="button" class="btn btn-danger">删除</button>
+                        </div>
+                    </div>
+                    <div class="stencil">
+                        <input type="checkbox" name="" id="moban1">
+                        <label class="circle" for="moban1"><img src="img/a1.jpg" alt=""
+                                class="img-rounded"><span>美女</span></label>
+                        <div class="btnbianji">
+                            <button type="button" class="btn btn-success" data-toggle="modal"
+                                data-target="#myModal">编辑</button>
+                            <button type="button" class="btn btn-danger">删除</button>
+                        </div>
+                    </div>
+                    <div class="stencil">
+                        <input type="checkbox" name="" id="moban2">
+                        <label class="circle" for="moban2"><img src="img/a1.jpg" alt=""
+                                class="img-rounded"><span>美女</span></label>
+                        <div class="btnbianji">
+                            <button type="button" class="btn btn-success" data-toggle="modal"
+                                data-target="#myModal">编辑</button>
+                            <button type="button" class="btn btn-danger">删除</button>
+                        </div>
+                    </div>
+                    <div class="stencil">
+                        <input type="checkbox" name="" id="moban3">
+                        <label class="circle" for="moban3"><img src="img/a1.jpg" alt=""
+                                class="img-rounded"><span>美女</span></label>
+                        <div class="btnbianji">
+                            <button type="button" class="btn btn-success" data-toggle="modal"
+                                data-target="#myModal">编辑</button>
+                            <button type="button" class="btn btn-danger">删除</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 编辑模态 -->
+    <div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content animated bounceInRight">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">关闭</span>
+                    </button>
+                    <i class="fa fa-laptop modal-icon"></i>
+                    <h4 class="modal-title">编辑修改</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">模板名称 :</label>
+                            <div class="col-sm-8">
+                                <input type="email" placeholder="用户名" class="form-control">
+                                <span class="help-block m-b-none">请输入排序</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">模板路劲 :</label>
+                            <div class="col-sm-8">
+                                <select class="form-control m-b" name="account">
+                                    <option>选项 1</option>
+                                    <option>选项 2</option>
+                                    <option>选项 3</option>
+                                    <option>选项 4</option>
+                                </select>
+                                <span class="help-block m-b-none">请输入网站名称</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">模板缩略图 :</label>
+                            <div class="col-sm-8">
+                                <input type="file" class="form-control">
+                                <span class="help-block m-b-none">请输入网站logo</span>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary">保存</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="lib/jquery/jquery-1.12.4.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".i-checks").iCheck({ checkboxClass: "icheckbox_square-green", radioClass: "iradio_square-green", })
+        });
+        $(function () {
+            $('input[id=lefile]').change(function () {
+                $('.input-large').val($(this).val());
+            });
+            $('.chongzhi').click(function () {
+                $("input,textarea").val("");
+            })
+        })
+    </script>
+</body>
+
+</html>

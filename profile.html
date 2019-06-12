@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>H+ 后台主题UI框架 - 基本表单</title>
+    <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
+    <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <style>
+        form {
+            width: 1200px;
+            margin: 0 auto;
+            padding: 40px 0;
+            background-color: #fff;
+        }
+
+        .ibox-content {
+            border-top: none;
+            background: none;
+            overflow: hidden;
+        }
+
+        .checkbox-inline input[type=checkbox] {
+            margin-top: 2px;
+            margin-left: -16px;
+        }
+
+        .checkbox-inline {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-22">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content">
+                        <form method="get" class="form-horizontal">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">网址 : </label>
+
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">排列位置 : </label>
+
+                                <div class="col-sm-6">
+                                    <input type="text" placeholder="1" class="form-control">（ 由小到大排列 ）
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">网站名称 : </label>
+
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">网站Logo : </label>
+
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control">（ 88*31 gif或jpg ）
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">上传Logo : </label>
+
+                                <div class="col-sm-6">
+                                    <input type="file" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">上传Logo : </label>
+
+                                <div class="col-sm-6">
+                                    <textarea cols="80" rows="6" style="overflow: hidden; resize: none;"></textarea>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">站长Email : </label>
+
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">链接位置 : </label>
+
+                                <div class="col-sm-6">
+                                    <label class="checkbox-inline i-checks">
+                                        <input type="checkbox" value="option1">
+                                        未审核
+                                    </label>
+                                    <label class="checkbox-inline i-checks">
+                                        <input type="checkbox" value="option2">内页
+                                    </label>
+                                    <label class="checkbox-inline i-checks">
+                                        <input type="checkbox" value="option3">首页
+                                    </label>
+                                </div>
+                            </div>
+
+
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <div class="col-sm-4 col-sm-offset-2">
+                                    <button class="btn btn-primary" type="submit">保存内容</button>
+                                    <button class="btn btn-white" type="submit">取消</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/jquery/jquery-1.12.4.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
