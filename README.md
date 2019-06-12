@@ -1,23 +1,23 @@
 # 后台管理模板
 
-### onChangeCat
+### onChangeCat()
 
 参数:URL&VALUE-
-|**url 字符串
-|**value 传入 id
+|——url：字符串
+|——value：传入 id
 
-### link_to_waiceng
+### link_to_waiceng()
 
 参数:URL&E-
-|**url 字符串
-|**value 传入 this
+|——url；字符串
+|——value：传入 this
 
-### ajaxPost
+### ajaxPost()
 
 参数:URL-
-|\*\*url 字符串
+|——url：字符串
 
-### off
+### off()
 
 参数:ofStyle-
-|\*\*url 传入类名 元素隐藏
+|——url：传入类名——元素隐藏
