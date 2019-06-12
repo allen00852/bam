@@ -9,7 +9,7 @@
 ### link_to_waiceng()
 
 参数:URL&E-
-|——url；字符串
+|——url：字符串
 |——value：传入 this
 
 ### ajaxPost()
