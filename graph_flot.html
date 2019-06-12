@@ -12,7 +12,12 @@
     <meta name="description" content="">
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="lib/fuwenben/css/simditor.css">
+    <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+    <script>
+        tinymce.init({
+            selector: 'textarea'
+        });
+    </script>
     <style>
         .note-editable {
             height: 500px;
@@ -130,7 +135,9 @@
                             </div>
                         </div>
                         <div class="ibox-content no-padding">
-                            <textarea id="editor" placeholder="Balabala" autofocus></textarea>
+                            <textarea>
+                                Easy! You should check out MoxieManager!
+                            </textarea>
                         </div>
                         <div class="form-group" style="margin-top: 20px;">
                             <div class="col-sm-4 col-sm-offset-2">
@@ -146,33 +153,7 @@
     </div>
     <script src="lib/jquery/jquery-1.12.4.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/fuwenben//js/hotkeys.min.js"></script>
-    <script src="lib/fuwenben//js/module.min.js"></script>
-    <script src="lib/fuwenben//js/simditor.min.js"></script>
-    <script src="lib/fuwenben//js/uploader.min.js"></script>
-    <!-- <script>
-        var editor = new Simditor({
-            textarea: $('#editor')
-            //optional options
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            $(".summernote").summernote({ lang: "zh-CN" })
-        });
-        var edit = function () {
-            $("#eg").addClass("no-padding");
-            $(".click2edit").summernote({ lang: "zh-CN", focus: true })
-        };
-        var save = function () {
-            $("#eg").removeClass("no-padding");
-            var aHTML = $(".click2edit").code();
-            $(".click2edit").destroy()
-        };
 
-
-    </script> -->
-    <script src="js/bg.js"></script>
 </body>
 
 </html>

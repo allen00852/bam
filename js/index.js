@@ -16,6 +16,8 @@ function ajaxPost(url) {
     url: url,
     type: "post",
     dataType: "json",
+
+    
     success: function(data) {
       console.log(data);
       $("#table").html(template("tpl", { dataList: data }));

@@ -275,19 +275,26 @@ a.allDelete i.glyphicon {
 .pagelist .page a {
   display: inline;
   padding: 6px 12px;
+  margin-left: -1px;
   border: 1px solid #ddd;
 }
 .pagelist .page span {
   color: #fff;
   background: #5bc0de;
+  border: 1px solid #5bc0de;
 }
 .pagelist .page a {
+  .
+
+
+  
   color: #000;
   background: #fefefe;
 }
 .pagelist .page a:hover {
   color: #fff;
   background: #5bc0de;
+  border: 1px solid #5bc0de;
 }
 .m-b {
   height: 40px;
