@@ -1,12 +1,23 @@
-# bam
-bam
-@param {*} url 传入URL
-@param {*} value 传入ID   
-onChangeCat(url, value) 
-@param {*} url 请求的URL
-@param {*} e 传入this       
-link_to_waiceng(url, e) 
-@param {*} url 请求的url      
-ajaxPost(url) 
-@param {*} ofStyle 传入类名 元素隐藏    
-ff(ofStyle)
+# 后台管理模板
+
+### onChangeCat
+
+参数:URL&VALUE-
+|**url 字符串
+|**value 传入 id
+
+### link_to_waiceng
+
+参数:URL&E-
+|**url 字符串
+|**value 传入 this
+
+### ajaxPost
+
+参数:URL-
+|\*\*url 字符串
+
+### off
+
+参数:ofStyle-
+|\*\*url 传入类名 元素隐藏
